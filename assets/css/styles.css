@@ -62,24 +62,12 @@ a:not([class]) {
 	text-decoration-skip-ink: auto;
 	color: currentColor;
 }
-a {
-	color: inherit !important;
-	text-decoration: none !important;
-	background: none !important;
-	-webkit-tap-highlight-color: transparent !important;
-	outline: none !important;
-	box-shadow: none !important;
-}
 
 a:visited,
 a:active,
 a:hover,
 a:focus {
 	color: inherit !important;
-	text-decoration: none !important;
-	background: none !important;
-	outline: none !important;
-	box-shadow: none !important;
 }
 /* Make images easier to work with */
 img,
