@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Fonts -->
+		<link rel="stylesheet" href="assets/css/styles.css" />
+		<title>DentHunter</title>
+	</head>
+	<body>
+		<header>
+			<div class="header">
+				<div class="header-line">
+					<div class="header-logo">
+						<a href="index.html">
+							<img src="assets/img/logo.png" alt="" />
+						</a>
+					</div>
+					<div class="header-nav">
+						<ul>
+							<li><a href="uslugi.html">Услуги</a></li>
+							<li><a href="#">Наши работы</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="header-contacts">
+						<div class="header-phone">
+							<a href="tel:79999999999">+7 999 999 99 99</a>
+						</div>
+						<div class="header-icons">
+							<a href="#"
+								><img src="assets/svg/icons8-whatsapp-480.svg" alt=""
+							/></a>
+							<a href="#" class="telegram"
+								><img src="assets/svg/telegram-svgrepo-com (1).svg" alt=""
+							/></a>
+						</div>
+						<a class="header-button button" href="#"> Оставить заявку </a>
+					</div>
+				</div>
+			</div>
+			<!-- МОБИЛЬНЫЙ ХЕДЕР (≤1400px) -->
+			<div class="mobile-header-overlay">
+				<div class="mobile-header-inner">
+					<!-- Бургер -->
+					<button class="menu-burger" aria-label="Меню" aria-expanded="false">
+						<svg width="40" height="40" viewBox="0 0 100 100">
+							<path
+								class="line line1"
+								d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+							/>
+							<path class="line line2" d="M 20,50 H 80" />
+							<path
+								class="line line3"
+								d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+							/>
+						</svg>
+					</button>
+
+					<!-- Логотип по центру -->
+					<div class="mobile-logo">
+						<a href="index.html">
+							<img src="assets/img/logo.png" alt="Логотип" />
+						</a>
+					</div>
+
+					<!-- Иконки справа -->
+					<div class="mobile-icons">
+						<a href="#"
+							><img src="assets/svg/icons8-whatsapp-480.svg" alt="WhatsApp"
+						/></a>
+						<a href="#" class="telegram"
+							><img
+								src="assets/svg/telegram-svgrepo-com (1).svg"
+								alt="Telegram"
+						/></a>
+					</div>
+				</div>
+			</div>
+
+			<!-- МОБИЛЬНОЕ МЕНЮ -->
+			<div class="mobile-menu">
+				<div class="mobile-menu-inner">
+					<nav>
+						<ul>
+							<li><a href="uslugi.html">Услуги</a></li>
+							<li><a href="#">Наши работы</a></li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="mobile-menu-contacts">
+						<a href="tel:79999999999" class="header-phone">+7 999 999 99 99</a>
+						<a class="header-button button" href="#">Оставить заявку</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<nav aria-label="breadcrumb" class="breadcrumb-top">
+				<div class="container">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item"><a href="index.html">Услуги</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Удаление вмятин на капоте</li>
+					</ol>
+				</div>
+			</nav>
+
+			<section
+				class="uslugi-page"
+				style="background-image: url('assets/img/pexels-tdcat-70912.jpg')"
+			>
+				<div class="container">
+					<div class="uslugi-page-back"><a href="uslugi.html">Назад</a></div>
+					<div class="uslugi-page-title">
+						<h1>Удаление вмятин <br>на капоте</h1>
+					</div>
+				</div>
+			</section>
+      <section class="pricelist">
+        <div class="container">
+            <!-- Заголовок -->
+            <div class="pricelist-title">
+                <h2>Наши цены</h2>
+            </div>
+
+            <!-- Таблица -->
+            <div class="pricelist-table">
+                <div class="pricelist-header">
+                    <div class="pricelist-col">Размер</div>
+                    <div class="pricelist-col">Время выполнения</div>
+                    <div class="pricelist-col">Цена</div>
+                </div>
+
+                <!-- Строки -->
+                <div class="pricelist-row">
+                    <div class="pricelist-col service">После града</div>
+                    <div class="pricelist-col">от 6 часов</div>
+                    <div class="pricelist-col price">от 1500 ₽</div>
+                </div>
+
+                <div class="pricelist-row">
+                    <div class="pricelist-col service">2 - 5 см</div>
+                    <div class="pricelist-col">от 6 часов</div>
+                    <div class="pricelist-col price">от 3000 ₽</div>
+                </div>
+
+                <div class="pricelist-row">
+                    <div class="pricelist-col service">5 - 10 см</div>
+                    <div class="pricelist-col">от 6 часов</div>
+                    <div class="pricelist-col price">от 6000 ₽</div>
+                </div>
+
+                <div class="pricelist-row">
+                    <div class="pricelist-col service">10 - 15 см</div>
+                    <div class="pricelist-col">от 6 часов</div>
+                    <div class="pricelist-col price">от 9000 ₽</div>
+                </div>
+
+                <div class="pricelist-row">
+                    <div class="pricelist-col service">15 - 25 см</div>
+                    <div class="pricelist-col">от 6 часов</div>
+                    <div class="pricelist-col price">от 15000 ₽</div>
+                </div>
+            </div>
+            <div class="wrapper">
+              <a class="trust-your-car-button button" href="#">
+							Оставить заявку
+						</a>
+            </div>
+            
+        </div>
+
+      </section>
+			<section class="all-services usluga">
+				<div class="container">
+						<div class="all-services-title">
+								<h2>ремонт вмятин</h2>
+								<h2>на любых поверхностях вашего автомобиля</h2>
+						</div>
+
+						<div class="all-services-cards">
+								<!-- 1. Капот -->
+								<a href="#" class="all-services-card">
+										<img src="assets/img/services-1.png" alt="Удаление вмятин на капоте" />
+										<div class="card-overlay">
+												<h3>Удаление вмятин</h3>
+												<h3>на капоте</h3>
+												<div class="card-line"></div>
+												<p class="card-price">от 3 000 ₽</p>
+										</div>
+								</a>
+
+								<!-- 2. Крыша -->
+								<a href="#" class="all-services-card">
+										<img src="assets/img/services-1.png" alt="Удаление вмятин на крыше" />
+										<div class="card-overlay">
+												<h3>Удаление вмятин</h3>
+												<h3>на крыше</h3>
+												<div class="card-line"></div>
+												<p class="card-price">от 2 000 ₽</p>
+										</div>
+								</a>
+
+								<!-- 3. Крыло -->
+								<a href="#" class="all-services-card">
+										<img src="assets/img/services-1.png" alt="Удаление вмятин на крыле" />
+										<div class="card-overlay">
+												<h3>Удаление вмятин</h3>
+												<h3>на крыле</h3>
+												<div class="card-line"></div>
+												<p class="card-price">от 2 000 ₽</p>
+										</div>
+								</a>
+
+								<!-- 4. Дверь -->
+								<a href="#" class="all-services-card">
+										<img src="assets/img/services-1.png" alt="Удаление вмятин на двери" />
+										<div class="card-overlay">
+												<h3>Удаление вмятин</h3>
+												<h3>на двери</h3>
+												<div class="card-line"></div>
+												<p class="card-price">от 2 000 ₽</p>
+										</div>
+								</a>
+
+								<!-- 5. ДРУГАЯ ВМЯТИНА — ВЫСОКАЯ, СПРАВА -->
+								<a href="#" class="all-services-card tall special">
+									<img src="assets/img/services-1.png" />
+									<div class="card-overlay">
+											<h3>Другая вмятина</h3>
+
+											<button type="button" class="button">Узнать стоимость</button>
+									</div>
+							</a>
+						</div>
+				</div>
+			</section>
+			<section class="our-works">
+				<div class="container">
+					<div class="our-works-title">
+						<h2>Наши работы</h2>
+					</div>
+
+					<!-- Слайдер с "До / После" без ползунка -->
+					<div class="works-slider">
+						<div class="slides-container">
+							<!-- СЛАЙД 1 -->
+							<div class="slide">
+								<div class="images-row">
+									<div class="image-block before">
+										<img src="assets/img/dver.png" alt="До ремонта">
+										<span class="label">До</span>
+									</div>
+									<div class="image-block after">
+										<img src="assets/img/krisha.png" alt="После ремонта">
+										<span class="label">После</span>
+									</div>
+								</div>
+								<div class="caption">
+									Ремонт крыла. 3500 руб. Длительность 4 часа
+								</div>
+							</div>
+
+							<!-- СЛАЙД 2 (добавь свои фото) -->
+							<div class="slide">
+								<div class="images-row">
+									<div class="image-block before">
+										<img src="assets/img/krilo.png" alt="До">
+										<span class="label">До</span>
+									</div>
+									<div class="image-block after">
+										<img src="assets/img/start.png" alt="После">
+										<span class="label">После</span>
+									</div>
+								</div>
+								<div class="caption">
+									Ремонт двери. 4200 руб. Длительность 3 часа
+								</div>
+							</div>
+
+							<div class="slide">
+								<div class="images-row">
+									<div class="image-block before">
+										<img src="assets/img/krilo.png" alt="До">
+										<span class="label">До</span>
+									</div>
+									<div class="image-block after">
+										<img src="assets/img/start.png" alt="После">
+										<span class="label">После</span>
+									</div>
+								</div>
+								<div class="caption">
+									Ремонт двери. 4200 руб. Длительность 3 часа
+								</div>
+							</div>
+							
+						</div>
+
+						<!-- Стрелки -->
+						<button class="nav-btn prev">←</button>
+						<button class="nav-btn next">→</button>
+					</div>
+				</div>
+			</section>
+			<section class="advantages">
+				<div class="container">
+					<div class="advantages-grid">
+
+						<article class="card card1 tall">
+							<div class="icon" aria-hidden="true">
+								<!-- можно заменить SVG -->
+								<svg xmlns="http://www.w3.org/2000/svg" width="138" height="139" viewBox="0 0 138 139" fill="none">
+<path d="M126.773 71.9601L108.67 56.2751C108.232 55.8955 106.389 55.4907 106.217 57.3955V64.7206H93.9372L104.903 55.2195C105.509 54.2362 105.622 53.8429 104.903 52.9785L79.2583 30.7595C78.8197 30.3799 78.2004 30.2907 77.6717 30.5316C77.1438 30.7725 76.8051 31.2998 76.8051 31.88V42.8737H47.6324C46.8136 42.8737 46.15 43.5373 46.15 44.3561V48.0112H23.6641V50.9761H52.5901V48.0112H49.1148V45.8385H78.2876C79.1063 45.8385 79.77 45.1749 79.77 44.3561V35.1257L101.668 54.099L79.77 73.0722V63.8421C79.77 63.0234 79.1063 62.3597 78.2876 62.3597H49.1148V53.9409H46.15V63.8421C46.15 64.6609 46.8136 65.3245 47.6324 65.3245H76.8051V76.3182C76.8051 76.8985 77.1439 77.4257 77.6717 77.6666C77.8689 77.7566 78.6011 78.036 79.2583 77.4387L87.3668 70.4133V79.9582C87.3668 80.777 88.0304 81.4407 88.8492 81.4407H106.217V88.7656C106.217 89.3459 107.064 91.0688 108.67 89.8861L126.773 74.201C127.098 73.9193 127.285 73.5105 127.285 73.0805C127.285 72.6506 127.098 72.2418 126.773 71.9601ZM109.182 85.5196V79.9582C109.182 79.1395 108.518 78.4758 107.699 78.4758H90.3316V67.8445L90.5153 67.6855H107.699C108.518 67.6855 109.182 67.0218 109.182 66.203V60.6416L123.539 73.0807L109.182 85.5196Z" fill="white"/>
+<path d="M82.0823 89.9945L63.9794 74.3097C63.5407 73.9301 62.9211 73.8407 62.3927 74.0819C61.8649 74.3228 61.5261 74.85 61.5261 75.4302V82.7549H41.8545C41.0357 82.7549 40.3721 83.4185 40.3721 84.2373V97.9928C40.3721 98.8117 41.0357 99.4753 41.8545 99.4753H61.5261V106.8C61.5261 107.38 62.2727 109.045 63.9794 107.92L82.0823 92.2354C82.4071 91.9537 82.5939 91.5449 82.5939 91.1149C82.5939 90.685 82.4072 90.2762 82.0823 89.9945ZM64.491 103.554V97.9929C64.491 97.1741 63.8273 96.5105 63.0086 96.5105H43.3369V85.7198H63.0086C63.8273 85.7198 64.491 85.0562 64.491 84.2374V78.6763L78.8476 91.1151L64.491 103.554Z" fill="black"/>
+<path d="M20.7959 36.7271H25.476V39.692H20.7959V36.7271Z" fill="black"/>
+<path d="M37.3203 36.7271H66.2464V39.692H37.3203V36.7271Z" fill="black"/>
+<path d="M29.0371 36.7271H33.7167V39.692H29.0371V36.7271Z" fill="white"/>
+<path d="M15.3809 48.0113H20.0605V50.9761H15.3809V48.0113Z" fill="white"/>
+<path d="M27.4688 67.5513H32.1483V70.5161H27.4688V67.5513Z" fill="black"/>
+<path d="M43.9932 68.0001H72.9192V70.9649H43.9932V68.0001Z" fill="black"/>
+<path d="M35.71 67.5513H40.3896V70.5161H35.71V67.5513Z" fill="black"/>
+<path d="M10.0439 77.353H14.7235V80.3178H10.0439V77.353Z" fill="white"/>
+<path d="M26.5684 77.353H55.4944V80.3178H26.5684V77.353Z" fill="white"/>
+<path d="M18.2852 77.353H22.9648V80.3178H18.2852V77.353Z" fill="black"/>
+<path d="M12.3301 103.835H17.0097V106.8H12.3301V103.835Z" fill="white"/>
+<path d="M28.8545 103.835H57.7806V106.8H28.8545V103.835Z" fill="black"/>
+<path d="M20.5703 103.835H25.2505V106.8H20.5703V103.835Z" fill="white"/>
+								</svg>
+							</div>
+							<h3>ВЫСОКАЯ СКОРОСТЬ</h3>
+							<p>Ремонт вмятин по технологии PDR займёт существенно меньше времени, чем рихтовка и покраска. В среднем удаление вмятины занимает от <strong>30 до 90 минут</strong>.</p>
+						</article>
+
+						<article class="card card2 tall">
+							<div class="icon" aria-hidden="true">
+								<!-- можно заменить SVG -->
+								<svg xmlns="http://www.w3.org/2000/svg" width="110" height="112" viewBox="0 0 110 112" fill="none">
+								<g clip-path="url(#clip0_2127_361)">
+								<mask id="mask0_2127_361" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-1" y="0" width="111" height="111">
+								<path d="M-0.400391 0.456055H109.6V110.456H-0.400391V0.456055Z" fill="white"/>
+								</mask>
+								<g mask="url(#mask0_2127_361)">
+								<path d="M57.7688 108.845H35.6934V104.548C35.6934 103.361 36.6552 102.399 37.8418 102.399H71.3574C72.5438 102.399 73.5059 103.361 73.5059 104.548V108.845H65.4432" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M60.8119 86.8404C61.7637 98.5709 66.993 102.399 66.993 102.399H42.2129C42.2129 102.399 47.4422 98.5709 48.3939 86.8404" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M51.1621 72.0261V27.0563" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M58.0371 72.0261V27.0563" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M58.0371 19.7387V14.2039" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M51.1621 19.7387V14.2039" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M36.4627 74.9376C36.8784 74.9376 37.1931 75.3039 37.1416 75.7153C36.4775 81.0037 29.0976 85.171 20.0911 85.171C11.0847 85.171 3.70478 81.0037 3.0407 75.7153C2.98913 75.3039 3.30388 74.9376 3.7196 74.9376H36.4627Z" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M34.4178 74.676L20.6914 31.6506" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M9.22438 64.3156L5.76367 74.6756" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M20.1362 31.6532L11.6064 57.1868" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M105.478 74.9376C105.894 74.9376 106.209 75.3039 106.157 75.7153C105.493 81.0037 98.1131 85.171 89.1066 85.171C80.1004 85.171 72.7201 81.0037 72.0564 75.7153C72.0044 75.3039 72.3194 74.9376 72.7353 74.9376H105.478Z" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M103.43 74.676L89.7061 31.6506" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M89.1535 31.6506L74.7783 74.676" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M63.4082 80.5928C63.4082 85.4577 59.4645 89.4014 54.5996 89.4014C49.7347 89.4014 45.791 85.4577 45.791 80.5928C45.791 75.7279 49.7347 71.7842 54.5996 71.7842C59.4645 71.7842 63.4082 75.7279 63.4082 80.5928Z" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M61.0449 8.51269C61.0449 12.0722 58.1591 14.958 54.5996 14.958C51.0401 14.958 48.1543 12.0722 48.1543 8.51269C48.1543 4.95316 51.0401 2.06738 54.5996 2.06738C58.1591 2.06738 61.0449 4.95316 61.0449 8.51269Z" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M80.3723 24.9482H67.8402C61.882 19.7011 56.4494 19.7011 54.5996 19.7011C52.7498 19.7011 47.3175 19.7011 41.359 24.9482H4.43359C2.65383 24.9482 1.21094 26.3911 1.21094 28.1709C1.21094 29.9507 2.65383 31.3936 4.43359 31.3936H42.6203C43.4591 31.3936 44.265 31.0666 44.8663 30.4818C49.3269 26.1464 53.1576 26.1464 54.5996 26.1464C56.0416 26.1464 59.8725 26.1464 64.3327 30.4818C64.9342 31.0666 65.7401 31.3936 66.5789 31.3936H104.766C106.545 31.3936 107.988 29.9507 107.988 28.1709C107.988 26.3911 106.545 24.9482 104.766 24.9482H87.9268" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								</g>
+								</g>
+								<defs>
+								<clipPath id="clip0_2127_361">
+								<rect width="110" height="111" fill="white" transform="translate(0 0.65625)"/>
+								</clipPath>
+								</defs>
+								</svg>
+							</div>
+							<h3>СТАБИЛЬНОСТЬ</h3>
+							<p>Удаление вмятин по технологии PDR <strong>не затрагивает</strong> лакокрасочное покрытие. Ремонт остаётся почти незаметным, мастер <strong>не меняет</strong>  цвет при необходимости.</p>
+						</article>
+
+						<article class="card card3 dark">
+							<h3>ДОСТУПНЫЕ ЦЕНЫ</h3>
+							<p>Кузовные работы — это всегда дорого, но не в нашем случае. Удаление вмятин по технологии PDR значительно сэкономит ваш бюджет. Цена озвучивается сразу и не изменится в процессе ремонта.</p>
+						</article>
+
+						<article class="card card4 dark">
+							<h3>БЕЗ СНЯТИЯ ДЕТАЛЕЙ</h3>
+							<p>После ремонта не остаётся следов даже на гранях болтов. Деталь приобретает первоначальный внешний вид. Отсутствуют следы грубой рихтовки, шпатлёвки и покраски.</p>
+						</article>
+
+					</div>
+				</div>
+			</section>
+
+
+			<section class="faq">
+				<div class="container">
+					<div class="faq-title">
+						<h2>Часто задаваемые вопросы</h2>
+					</div>
+
+					<div class="faq-items">
+						<div class="faq-item">
+							<button class="faq-question" aria-expanded="false">
+								<span class="faq-question-text">Реально ли убрать вмятины без покраски?</span>
+								<span class="faq-icon">
+									<span class="plus"></span>
+								</span>
+							</button>
+							<div class="faq-answer">
+								<div class="faq-answer-inner">
+									<p>Да, это возможно. Кузовной ремонт без покраски проводится с использованием технологии PDR — инновационного метода, который позволяет устранять вмятины от ударов, не нарушая заводское лакокрасочное покрытие. Автовладельцы ценят этот способ за экономию, быстроту и сохранение оригинального вида кузова.
+<br><br>
+Однако важно понимать: PDR эффективен только при небольших вмятинах и мелких повреждениях. Если автомобиль получил серьёзные повреждения в ДТП, потребуется полноценный кузовной ремонт — с рихтовкой, грунтовкой и обязательной покраской повреждённого участка.</p>
+								</div>
+							</div>
+						</div>
+						<div class="faq-item">
+							<button class="faq-question" aria-expanded="false">
+								<span class="faq-question-text">Возможен ли ремонт старых вмятин без покраски в вашем автосервисе?</span>
+								<span class="faq-icon">
+									<span class="plus"></span>
+								</span>
+							</button>
+							<div class="faq-answer">
+								<div class="faq-answer-inner">
+									<p>Да. Мы выполняем беспокрасочное удаление вмятин, наши мастера обладают большим опытом. Главное условие — сохранность заводского лакокрасочного покрытия. Если ЛКП повреждено, метод PDR неприменим, и деталь придётся красить.</p>
+								</div>
+							</div>
+						</div>
+						<div class="faq-item">
+							<button class="faq-question" aria-expanded="false">
+								<span class="faq-question-text">Как подготовить автомобиль для удаления вмятин без покраски?</span>
+								<span class="faq-icon">
+									<span class="plus"></span>
+								</span>
+							</button>
+							<div class="faq-answer">
+								<div class="faq-answer-inner">
+									<p>Этот вид ремонта минимально требователен к чистоте поверхности. Достаточно просто вымыть машину обычным автошампунем. Смывать битум, смолы или резиновую пыль не нужно. Мы не оказываем услуги детейлинга (мойка, химчистка и т.д.), поэтому подготовить автомобиль к ремонту вам придётся самостоятельно.</p>
+								</div>
+							</div>
+						</div>
+						<div class="faq-item">
+							<button class="faq-question" aria-expanded="false">
+								<span class="faq-question-text">Можете по фотографии сказать цену выпрямления вмятины после града?</span>
+								<span class="faq-icon">
+									<span class="plus"></span>
+								</span>
+							</button>
+							<div class="faq-answer">
+								<div class="faq-answer-inner">
+									<p>Да. Чтобы оценить ремонт, сделайте фото повреждённого участка и дефектов при хорошем освещении на чистом автомобиле. Отправьте снимки через форму обратной связи на сайте. По вашему запросу также выполним полировку кузова, удалим мелкие царапины и вернём автомобилю привлекательный вид. Цены конкурентные по Томску.</p>
+								</div>
+							</div>
+						</div>
+						<div class="faq-item">
+							<button class="faq-question" aria-expanded="false">
+								<span class="faq-question-text">Сколько по времени занимает ремонт вмятины на машине?</span>
+								<span class="faq-icon">
+									<span class="plus"></span>
+								</span>
+							</button>
+							<div class="faq-answer">
+								<div class="faq-answer-inner">
+									<p>Зависит от размера и глубины повреждения, но обычно не менее нескольких часов.</p>
+								</div>
+							</div>
+						</div>
+						<div class="faq-item">
+							<button class="faq-question" aria-expanded="false">
+								<span class="faq-question-text">Что дешевле: устранить вмятину по технологии PDR или перекрасить деталь?</span>
+								<span class="faq-icon">
+									<span class="plus"></span>
+								</span>
+							</button>
+							<div class="faq-answer">
+								<div class="faq-answer-inner">
+									<p>Как правило, беспокрасочный ремонт обходится дешевле. Однако при сложных вмятинах, требующих значительных усилий и времени, цена может вырасти. Удаление вмятин без покраски — это высококвалифицированная услуга, хотя она почти не требует расходных материалов (краски, грунта, лака).</p>
+								</div>
+							</div>
+						</div>
+						<div class="faq-item">
+							<button class="faq-question" aria-expanded="false">
+								<span class="faq-question-text">Что такое технология PDR?</span>
+								<span class="faq-icon">
+									<span class="plus"></span>
+								</span>
+							</button>
+							<div class="faq-answer">
+								<div class="faq-answer-inner">
+									<p>Даже самые аккуратные водители иногда сталкиваются с вмятинами и сколами на кузове, при которых лакокрасочное покрытие остаётся целым. Причины могут быть разными: град, падение снега или наледи, удар дверью соседнего автомобиля, случайный пинок или детский велосипед. В большинстве случаев проблему можно решить без серьёзного кузовного ремонта. Для этого применяется технология Paintless Dent Repair (PDR) — метод, позволяющий полностью восстановить геометрию детали без покраски. Наши мастера прошли специальное обучение и работают с профессиональным дорогостоящим инструментом для вытягивания вмятин на металле и пластике.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+      <section class="contacts">
+				<div class="container">
+					<div class="contacts-title">
+						<h2>Контакты</h2>
+						<div class="contacts-items">
+							<div class="contacts-item">
+								<p>Телефон</p>
+								<div class="contacts-item-tel">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="25"
+										height="25"
+										viewBox="0 0 723.000000 1280.000000"
+										preserveAspectRatio="xMidYMid meet"
+										id="svgcontent"
+										overflow="visible"
+										x="723"
+										y="1280"
+									>
+										<g class="layer" style="pointer-events: all">
+											<title style="pointer-events: none" opacity="0.33">
+												Layer 1
+											</title>
+											<g
+												transform="translate(0 1280) scale(0.1 -0.1)"
+												fill="#000000"
+												stroke="none"
+												id="svg_1"
+												fill-opacity="1"
+											>
+												<path
+													d="M451,12775 C289,12732 146,12614 73,12461 C-6,12296 1,12901 1,6391 C1,-116 -6,486 73,322 C125,214 234,99 331,53 C470,-14 199,-9 3616,-9 C7033,-9 6762,-14 6901,53 C6998,99 7107,214 7159,322 C7238,486 7231,-116 7231,6391 C7231,12901 7238,12296 7159,12461 C7107,12570 6999,12682 6901,12729 C6762,12796 7034,12791 3611,12790 C931,12790 498,12788 451,12775 zM6821,6651 L6821,1751 L3616,1751 L411,1751 L411,6651 L411,11551 L3616,11551 L6821,11551 L6821,6651 z"
+													id="svg_2"
+													fill="#86c02e"
+													fill-opacity="1"
+													stroke="none"
+													stroke-opacity="1"
+												></path>
+											</g>
+										</g>
+									</svg>
+									<a href="tel:79999999999">+7 (999) 999-99-99</a>
+								</div>
+							</div>
+							<div class="contacts-item">
+								<p>Режим работы</p>
+								<p>Пн-Сб: 10:00-20:00</p>
+							</div>
+						</div>
+					</div>
+					<div class="contacts-map">
+						<div style="position: relative;  flex: 1; 
+    min-width: 0; 
+    position: relative; 
+    overflow: hidden; 
+    border-radius: 20px;">
+							<a
+								href="https://yandex.ru/maps/org/dent_hunter/90164343038/?utm_medium=mapframe&utm_source=maps"
+								style="
+									color: #eee;
+									font-size: 12px;
+									position: absolute;
+									top: 0px;
+								"
+							></a
+							><a
+								href="https://yandex.ru/maps/67/tomsk/category/auto_detailing/9561111444/?utm_medium=mapframe&utm_source=maps"
+								style="
+									color: #eee;
+									font-size: 12px;
+									position: absolute;
+									top: 14px;
+								"
+								>Детейлинг в Томске</a
+							><a
+								href="https://yandex.ru/maps/67/tomsk/category/car_service_auto_repair/184105246/?utm_medium=mapframe&utm_source=maps"
+								style="
+									color: #eee;
+									font-size: 12px;
+									position: absolute;
+									top: 28px;
+								"
+								>Автосервис, автотехцентр в Томске</a
+							><iframe
+								src="https://yandex.ru/map-widget/v1/?ll=84.977742%2C56.460989&mode=search&oid=90164343038&ol=biz&z=17.19"
+								height="500"
+								frameborder="1"
+								allowfullscreen="true"
+								style="
+									position: relative;
+									border-radius: 20px;
+									width: 100% !important;
+									height: 100% !important;
+									min-height: 500px;
+									flex: 1;
+									display: block;
+									border: 0;
+								"
+							></iframe>
+						</div>
+						<div class="contacts-optional">
+						<h3>Свяжитесь с нами удобным способом</h3>
+						<div class="contacts-optional-items">
+							<div class="contacts-optional-item">
+								<p>WhatsApp</p>
+								<a href="#">wa.me/79999999999</a>
+							</div>
+							<div class="contacts-optional-item">
+								<p>Telegram</p>
+								<a href="#">t.me/Example</a>
+							</div>
+						</div>
+						<a class="button" href="#"> Оставить заявку </a>
+					</div>
+					</div>
+					
+				
+			</section>
+		</main>
+		<footer>
+			<div class="footer">
+				<div class="container">
+					<div class="footer-logo">
+						<img src="assets/img/logo.png" alt="Логотип DentHunter" />
+					</div>
+
+					<div class="footer-section accordion-item">
+						<div class="accordion-header">
+							<h3>Навигация</h3>
+							<div class="accordion-icon"></div>
+						</div>
+						<div class="accordion-content">
+							<div class="footer-navigation">
+								<ul>
+									<li><a href="#">Услуги</a></li>
+									<li><a href="#">Наши работы</a></li>
+									<li><a href="#">О нас</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer-section accordion-item">
+						<div class="accordion-header">
+							<h3>Услуги</h3>
+							<div class="accordion-icon"></div>
+						</div>
+						<div class="accordion-content">
+							<div class="footer-navigation">
+								<ul>
+									<li><a href="#">Удаление вмятин на капоте</a></li>
+									<li><a href="#">Удаление вмятин на крыше</a></li>
+									<li><a href="#">Удаление вмятин на крыле</a></li>
+									<li><a href="#">Удаление вмятин на двери</a></li>
+									<li><a href="#">Полировка стёкол</a></li>
+									<li><a href="#">Шлифовка стёкол</a></li>
+									<li><a href="#">Реставрация сколов на ЛКП</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer-section accordion-item active">
+						<div class="accordion-header">
+							<h3>Контакты</h3>
+							<div class="accordion-icon"></div>
+						</div>
+						<div class="accordion-content">
+							<div class="footer-contacts">
+								<div class="footer-contact">
+									<p>Адрес</p>
+									<a href="#">Томск, улица Матросова, 2/1</a>
+								</div>
+								<div class="footer-contact">
+									<p>Режим работы</p>
+									<a href="#">Пн-Сб: 10:00-20:00</a>
+								</div>
+								<div class="footer-contact">
+									<p>Телефон</p>
+									<div class="contacts-item-tel">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="25"
+											height="25"
+											viewBox="0 0 723.000000 1280.000000"
+											preserveAspectRatio="xMidYMid meet"
+											id="svgcontent"
+											overflow="visible"
+											x="723"
+											y="1280"
+										>
+											<g class="layer" style="pointer-events: all">
+												<title style="pointer-events: none" opacity="0.33">
+													Layer 1
+												</title>
+												<g
+													transform="translate(0 1280) scale(0.1 -0.1)"
+													fill="#000000"
+													stroke="none"
+													id="svg_1"
+													fill-opacity="1"
+												>
+													<path
+														d="M451,12775 C289,12732 146,12614 73,12461 C-6,12296 1,12901 1,6391 C1,-116 -6,486 73,322 C125,214 234,99 331,53 C470,-14 199,-9 3616,-9 C7033,-9 6762,-14 6901,53 C6998,99 7107,214 7159,322 C7238,486 7231,-116 7231,6391 C7231,12901 7238,12296 7159,12461 C7107,12570 6999,12682 6901,12729 C6762,12796 7034,12791 3611,12790 C931,12790 498,12788 451,12775 zM6821,6651 L6821,1751 L3616,1751 L411,1751 L411,6651 L411,11551 L3616,11551 L6821,11551 L6821,6651 z"
+														id="svg_2"
+														fill="#86c02e"
+														fill-opacity="1"
+														stroke="none"
+														stroke-opacity="1"
+													></path>
+												</g>
+											</g>
+										</svg>
+										<a href="tel:79999999999">+7 (999) 999-99-99</a>
+									</div>
+								</div>
+								<div class="footer-contact">
+									<p>Почта</p>
+									<div class="footer-contact-email">
+										<img src="assets/svg/email-1-svgrepo-com.svg" alt="" />
+										<a href="#">example@ya.ru</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer-nav">
+					<p>DentHunter © 2025 Все права защищены</p>
+					<a href="#">Политика конфиденциальности</a>
+				</div>
+				<div class="footer-nav">
+					<p>
+						Название организации ИНДИВИДУАЛЬНЫЙ ПРЕДПРИНИМАТЕЛЬ БОБРИКОВ РОМАН
+						ВЛАДИМИРОВИЧ
+					</p>
+					<p>ИНН 320703488061</p>
+					<p>ОГРН/ОГРНИП 324320000038702</p>
+				</div>
+			</div>
+		</footer>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
