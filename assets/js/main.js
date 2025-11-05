@@ -15,6 +15,23 @@ document.addEventListener('DOMContentLoaded', function () {
 	window.addEventListener('scroll', updateHeader)
 })
 
+// Плавный скролл для всех ссылок с href="#..."
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+	anchor.addEventListener('click', function (e) {
+		e.preventDefault()
+
+		const targetId = this.getAttribute('href')
+		const targetElement = document.querySelector(targetId)
+
+		if (targetElement) {
+			targetElement.scrollIntoView({
+				behavior: 'smooth',
+				block: 'start',
+			})
+		}
+	})
+})
+
 document.addEventListener('DOMContentLoaded', function () {
 	const buttons = document.querySelectorAll('.service-btn')
 	const images = document.querySelectorAll('.service-image')
@@ -218,4 +235,54 @@ document.addEventListener('DOMContentLoaded', function () {
 			accordionItem.classList.toggle('active')
 		})
 	})
+})
+// Открытие модалки
+document.querySelectorAll('.button').forEach(btn => {
+	btn.addEventListener('click', function (e) {
+		e.preventDefault()
+		document.getElementById('contactModal').style.display = 'flex'
+	})
+})
+
+// Закрытие
+document.querySelector('.modal-close').addEventListener('click', () => {
+	document.getElementById('contactModal').style.display = 'none'
+})
+
+// Закрытие по клику вне формы
+window.addEventListener('click', e => {
+	const modal = document.getElementById('contactModal')
+	if (e.target === modal) {
+		modal.style.display = 'none'
+	}
+})
+
+// Отправка формы (пример с alert)
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+	e.preventDefault()
+	alert('Заявка отправлена! Скоро перезвоним.')
+	document.getElementById('contactModal').style.display = 'none'
+	this.reset()
+})
+// Инициализация маски
+const phoneInput = document.getElementById('phone')
+const phoneMask = IMask(phoneInput, {
+	mask: '+{7} (000) 000-00-00',
+	lazy: false, // всегда показывать маску
+	placeholderChar: '_',
+})
+
+// Валидация при отправке
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+	e.preventDefault()
+
+	if (!phoneMask.unmaskedValue || phoneMask.unmaskedValue.length !== 11) {
+		alert('Введите полный номер телефона')
+		return
+	}
+
+	alert('Заявка отправлена!\nНомер: ' + phoneMask.value)
+	document.getElementById('contactModal').style.display = 'none'
+	this.reset()
+	phoneMask.updateValue() // сброс маски
 })

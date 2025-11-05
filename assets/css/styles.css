@@ -29,7 +29,9 @@ dl,
 dd {
 	margin: 0;
 }
-
+html {
+	scroll-behavior: smooth;
+}
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
@@ -1182,6 +1184,9 @@ body {
 	line-height: 1.6;
 }
 /* Contacts */
+.contacts {
+	padding: 60px 0;
+}
 .contacts-title {
 	display: flex;
 	justify-content: space-between;
@@ -1768,12 +1773,14 @@ body {
 
 	.pricelist-col {
 		padding: 10px 0;
-		text-align: left;
+		text-align: center;
 		border-bottom: 1px solid rgba(134, 192, 46, 0.2);
 	}
-
+	.pricelist-col:first-child,
+	.pricelist-col:last-child {
+		text-align: center;
+	}
 	.pricelist-col.price {
-		text-align: left;
 		font-weight: 700;
 		color: var(--accent);
 	}
@@ -1907,7 +1914,306 @@ body {
 		flex-direction: column;
 	}
 }
+/* About Us */
+.why_us {
+	padding: 100px 0;
+}
 
+.trust-your-car-title.about_us h2 {
+	font-size: 40px;
+}
+
+.why_us-left .button {
+	padding: 12px 35px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.why_ us-left .button::after {
+	margin-top: 2px;
+}
+
+.why_us-title {
+	margin-bottom: 40px;
+}
+
+.why_us-title h2 {
+	color: var(--accent);
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+.why_us-title p {
+	max-width: 500px;
+}
+
+.why_us-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.why_us-cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	padding: 0 16px;
+	text-align: center;
+}
+
+.why_us-card {
+	background-color: #333;
+	padding: 24px;
+	border-radius: 15px;
+	max-width: 300px;
+	margin: 0 auto;
+	cursor: pointer;
+	transition: all 0.4s ease;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.why_us-card img {
+	margin: 0 auto 16px;
+	display: block;
+	width: 48px;
+	height: 48px;
+}
+
+.why_us-card h5 {
+	font-size: 24px;
+	font-weight: 600;
+	margin: 10px 0;
+	color: #fff;
+}
+
+.why_us-card p {
+	color: #ccc;
+	font-size: 15px;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.why_us-card:hover {
+	transform: translateY(-8px);
+	background-color: #222;
+	box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+/* Our Team */
+.our_team {
+	padding: 100px 0;
+	color: #fff;
+}
+
+.our_team-title {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.our_team-title h2 {
+	font-size: 36px;
+	color: var(--accent);
+	margin-bottom: 12px;
+}
+
+.our_team-title .subtitle {
+	font-size: 18px;
+	color: #aaa;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+/* === СЛАЙДЕР === */
+.team-swiper {
+	overflow: hidden;
+	position: relative;
+}
+
+.team-card {
+	background: #1a1a1a;
+	border-radius: 16px;
+	overflow: hidden;
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+	transition: transform 0.4s ease, box-shadow 0.4s ease;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.team-card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 15px 35px rgba(134, 192, 46, 0.25);
+}
+
+.team-photo {
+	width: 100%;
+	height: 280px;
+	object-fit: cover;
+	border-bottom: 3px solid var(--accent);
+}
+
+.team-info {
+	padding: 20px;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.team-info h4 {
+	margin: 0 0 6px;
+	font-size: 22px;
+	color: #fff;
+}
+
+.team-info .position {
+	color: var(--accent);
+	font-weight: 600;
+	margin: 0 0 12px;
+	font-size: 15px;
+}
+
+.team-info .quote {
+	font-style: italic;
+	color: #ccc;
+	margin: 0;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+/* Стрелки */
+.swiper-button-next,
+.swiper-button-prev {
+	width: 44px;
+	height: 44px;
+	background: rgba(134, 192, 46, 0.25);
+	border-radius: 50%;
+	backdrop-filter: blur(5px);
+	transition: all 0.3s ease;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	font-size: 18px;
+	color: #86c02e;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+	background: #86c02e;
+}
+
+.swiper-button-next:hover:after,
+.swiper-button-prev:hover:after {
+	color: #000;
+}
+
+/* Точки */
+.swiper-pagination-bullet {
+	background: #555;
+	opacity: 1;
+	width: 10px;
+	height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+	background: var(--accent);
+	transform: scale(1.2);
+}
+/* Contact Form */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	backdrop-filter: blur(5px);
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-content {
+	background: #1a1a1a;
+	color: #fff;
+	padding: 32px;
+	border-radius: 16px;
+	max-width: 420px;
+	width: 90%;
+	position: relative;
+	box-shadow: 0 15px 40px rgba(134, 192, 46, 0.25);
+}
+
+.modal-close {
+	position: absolute;
+	top: 12px;
+	right: 16px;
+	font-size: 28px;
+	color: #aaa;
+	cursor: pointer;
+}
+
+.modal-close:hover {
+	color: #86c02e;
+}
+
+.modal h3 {
+	margin: 0 0 8px;
+	font-size: 24px;
+	color: #86c02e;
+}
+.modal p {
+	margin: 0 0 20px;
+	color: #ccc;
+	font-size: 15px;
+}
+
+.modal-form input {
+	width: 100%;
+	padding: 14px;
+	margin-bottom: 12px;
+	background: #333;
+	border: none;
+	border-radius: 8px;
+	color: #fff;
+	font-size: 15px;
+}
+
+.masked-input::placeholder {
+	color: #999;
+}
+.masked-input:focus {
+	outline: 2px solid #86c02e;
+	outline-offset: -2px;
+}
+
+.modal-submit {
+	width: 100%;
+	margin-top: 8px;
+	background: #86c02e;
+	color: #1a1a1a;
+	font-weight: 600;
+	padding: 14px;
+	border: 2px solid #86c02e;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.modal-submit:hover {
+	background: #fff;
+	color: #86c02e;
+}
+
+.modal-footer {
+	margin-top: 16px;
+	text-align: center;
+	font-size: 14px;
+	color: #aaa;
+}
+.modal-footer a {
+	color: #86c02e;
+	text-decoration: underline;
+}
 /* Adaptive */
 @media (max-width: 1400px) {
 	.landing-screen-title h1 {
@@ -1946,6 +2252,26 @@ body {
 	.contacts-title h2,
 	.all-services-title h2 {
 		text-align: center;
+	}
+	.why_us-wrapper {
+		flex-direction: column;
+		gap: 30px;
+		align-items: center;
+		text-align: center;
+	}
+	.why_us-left .button {
+		margin: 0 auto;
+		display: flex;
+		max-width: 225px;
+	}
+	.why_us {
+		padding: 40px 0;
+	}
+	.contacts {
+		padding: 0;
+	}
+	.trust-your-car-title.about_us h2 {
+		font-size: 34px;
 	}
 }
 /* Стили для аккордеона на мобильных устройствах */
@@ -2106,6 +2432,11 @@ body {
 		margin-bottom: 15px;
 	}
 }
+@media (max-width: 640px) {
+	.why_us-cards {
+		grid-template-columns: 1fr;
+	}
+}
 @media (max-width: 620px) {
 	.landing-screen-title h1,
 	.uslugi-page-title h1 {
@@ -2144,6 +2475,17 @@ body {
 	.uslugi-page-back a {
 		font-size: 14px;
 	}
+	.trust-your-car-title.about_us h2 {
+		font-size: 28px;
+	}
+}
+@media (max-width: 470px) {
+	.why_us-title h2 {
+		font-size: 30px;
+	}
+	.trust-your-car-title.about_us h2 {
+		font-size: 26px;
+	}
 }
 @media (max-width: 420px) {
 	.contacts-items {
@@ -2162,5 +2504,11 @@ body {
 		font-size: 14px;
 		padding: 15px 45px;
 		justify-content: center;
+	}
+	.why_us-title h2 {
+		font-size: 26px;
+	}
+	.trust-your-car-title.about_us h2 {
+		font-size: 24px;
 	}
 }
