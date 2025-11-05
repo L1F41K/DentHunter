@@ -27,8 +27,8 @@
 						<ul>
 							<li><a href="uslugi.html">Услуги</a></li>
 							<li><a href="#">Наши работы</a></li>
-							<li><a href="#">О нас</a></li>
-							<li><a href="#">Контакты</a></li>
+							<li><a href="about_us.html">О нас</a></li>
+							<li><a href="#contacts">Контакты</a></li>
 						</ul>
 					</div>
 					<div class="header-contacts">
@@ -93,8 +93,8 @@
 						<ul>
 							<li><a href="uslugi.html">Услуги</a></li>
 							<li><a href="#">Наши работы</a></li>
-							<li><a href="#">О нас</a></li>
-							<li><a href="#">Контакты</a></li>
+							<li><a href="about_us.html">О нас</a></li>
+							<li><a href="#contacts">Контакты</a></li>
 						</ul>
 					</nav>
 					<div class="mobile-menu-contacts">
@@ -231,7 +231,7 @@
 					</div>
 				</div>
 			</section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
 				<div class="container">
 					<div class="contacts-title">
 						<h2>Контакты</h2>
@@ -367,7 +367,7 @@
 								<ul>
 									<li><a href="#">Услуги</a></li>
 									<li><a href="#">Наши работы</a></li>
-									<li><a href="#">О нас</a></li>
+									<li><a href="about_us.html">О нас</a></li>
 									<li><a href="#">Контакты</a></li>
 								</ul>
 							</div>
@@ -474,6 +474,41 @@
 				</div>
 			</div>
 		</footer>
+		 <!-- МОДАЛЬНАЯ ФОРМА -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+          <span class="modal-close">×</span>
+          
+          <h3>Запишитесь на PDR-диагностику</h3>
+          <p>Оставьте заявку — перезвоним за 10 минут</p>
+
+          <form id="contactForm" class="modal-form">
+              <input type="text" placeholder="Ваше имя" required>
+              
+              <!-- КЛЮЧЕВОЙ ИНПУТ: id="phone" -->
+              <input 
+                  type="tel" 
+                  id="phone" 
+                  placeholder="+7 (___) ___-__-__" 
+                  required 
+                  class="masked-input"
+              >
+              
+              <input type="text" placeholder="Марка и модель авто">
+              
+              <button type="submit" class="button modal-submit">
+                  Отправить заявку
+              </button>
+          </form>
+
+          <div class="modal-footer">
+              <small>Или пишите в WhatsApp: 
+                  <a href="https://wa.me/79123456789" target="_blank">+7 (912) 345-67-89</a>
+              </small>
+          </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="assets/js/main.js"></script>
 	</body>
 </html>
